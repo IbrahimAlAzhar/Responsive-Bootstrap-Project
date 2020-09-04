@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; /*primary font is google font poppins and backup font is sans-serif */
+    color: #222; /*this color is little light then darker */
+}
+.navbar{
+    padding: .8rem; /*rem and am is similar,1 rem = 16 pixels  */
+}
+.navbar-nav li {
+    padding-right: 20px; /*in right side of navbar the padding is 20 px */
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+.carousel-inner img{ /*carousel means the image slider,the image slider div class name is carousel-inner */
+    width:100%;
+    height: 100%;
+}
+.carousel-caption{ /*the caption of image slider,this div class name is carousel-caption */
+    position: absolute;
+    top: 50%; /*the position of caption is carousel image slidebar */
+    transform: translateY(-50%);
+}
+.fixed{
+    position: absolute;
+    height:100%;
+    width:95%;
+}
+
+
+.carousel-caption h1 {
+    font-size: 500 %; /*the h1 tag of div class carousel-caption  */
+    text-transform: uppercase; /*the text is uppercase */
+    text-shadow: 1px 1px 15px #000; /*here the shadow is 1px vertical,1px horizontal and text width is 10px, and #000 means color is black */
+}
+.carousel-caption h3{
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000; /*10px width shadow*/
+    padding-bottom: 1rem; /*in this header the padding in bottom area is 1 px */
+}
+.btn-primary {
+    background-color: #6648b1; /*the color is purple */
+    border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+    background-color: #5637c;
+    border: 1px solid #6648b1;
+}
+.jumbotron {
+    padding: 1rem; /* here padding 1px */
+    border-radius: 0; /*the border radius is build in function on jumbotron */
+}
+.padding {
+    padding-bottom: 2rem; /*here padding 2 px in bottom all over */
+}
+.welcome {
+    width: 75%; /*in welcome div the width percentage is 75% and no margin  */
+    margin: 0 auto; /*for that reason text is centered */
+    padding-top: 2rem;
+}
+
+.welcome hr { /*in welcome div there are a hr(horizontal row) */
+    border-top: 2px solid #b4b4b4; /*in hr there are a horizontal line which is dark grey color */
+    width: 95%;
+    margin-top: .3rem; /*margin top is 0.3 pixel */
+    margin-bottom: 1rem;
+}
+.fa-code {
+    color: #e54d26; /*here change the color of html5(red color) */
+}
+.fa-bold {
+    color: #563d7c; /*change the color onto Blue of bootstrap icon */
+}
+.fa-css3{
+    color: #2163af;
+}
+.fa-code, .fa-bold, .fa-css3 {
+    font-size:  4em; /*the size of html5,bootstrap and css is 4 pixels  */
+    margin: 1rem; /*and margin is 1 pixel around this icon */
+}
+.fun{
+    width: 100%; /*width of emoji section of button class(click for fun( is 100% */
+    margin-bottom: 2rem;
+}
+.gif {
+    max-width: 100%; /*the width of gif emoji is 100% */
+}
+.social a {    /*here a describe all link of facebook,youtube,twitter */
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #dd4b39;
+}
+.fa-google-plus-g {
+    color: #517fa4;
+}
+.fa-instagram {
+    color: #517fa4;
+}
+.fa-youtube{
+    color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #d5d5d5; /*all social media hover color is dark grey color  */
+}
+footer {
+    background-color: #3f3f3f; /*in footer section there are build in function background color,here it is set to grey color */
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+hr.light{ /*the light horizontal row of footer class */
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem; /* top margin 0.8 pixel*/
+    margin-bottom: 1rem;
+}
+footer a{
+    color: #d5d5d5; /*this color is set for phone number */
+}
+hr.light-100 { /*here hr light-100 means the horizontal row above the copyright line */
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+   .social a {
+        font-size: 4em; /*when pixel is high means tab is small then font size and padding will be small */
+        padding: 2rem;
+   }
+  }
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size:350%;
+    }
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400%;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .display-4 { /*display-4 is text which is "build with ease"  */
+        font-size: 200%;
+    }
+    .social a {
+        font-size: 2.5em; /*when pixel is high means tab is small then font size and padding will be small */
+        padding: 1.2rem;
+   }
+}
+
+@media (max-width: 576px) { /*in smaller tab means smaller pixel we have to small all attribute */
+.carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size:250%;
+    }
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators { /*in smaller view(mobile view) the indicator which button changes the images disappear */
+        display: none;
+    }
+    .display-4 {
+        font-size: 160%;
+    }
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+    }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
